@@ -1,0 +1,64 @@
+[Project]
+Version=3
+Description=GBAEMU
+Api=fb (FreeBASIC),gdip (Gdi+),ogl (OpenGL),sv (Showvars),win (Windows),wx (wx Widgets)
+DefApi=fb (FreeBASIC),gdip (Gdi+),ogl (OpenGL),sv (Showvars),win (Windows),wx (wx Widgets)
+Grouping=1
+AddMainFiles=1
+AddModuleFiles=1
+ResExport=
+CompileIfNewer=0
+IncVersion=0
+RunCmd=0
+[Make]
+Module=Module Build,fbc -c
+Recompile=2
+Current=4
+1=Win x32,fbc -s gui
+2=Con x32,fbc -s console
+3=Win x64,fbc64 -s gui
+4=Con x64,fbc64 -s console
+Output=
+Run=
+Delete=
+[TabOrder]
+CurrentTab=1
+TabOrder=1,2,3,4,5,6,7,9,8,10,11
+[File]
+Main=1
+1=_gbaemul.bas
+2=variables.bas
+3=declaraciones.bas
+4=memoria.bas
+5=cartridge.bas
+6=cpu.bas
+7=gba.bas
+8=ppu.bas
+9=sdl2.bas
+10=timer.bas
+11=io.bas
+[BreakPoint]
+1=
+2=
+3=
+4=
+5=
+6=
+7=
+8=
+9=
+10=
+11=
+[FileInfo]
+1=0,116,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2=0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3=0,27,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4=0,315,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5=0,43,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+6=0,311,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+7=0,39,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8=0,365,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+9=0,55,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+10=0,16,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+11=0,49,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+
